@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-maroon-dark: #2a050d;
+    --color-maroon: #4a0e17;
+    --color-maroon-light: #671420;
+    --color-gold-dark: #996515;
+    --color-gold: #c5a059;
+    --color-gold-bright: #d4af37;
+    --color-gold-light: #f3e5ab;
+    --color-ivory: #faf5eb;
+    --color-cream: #f4ecdc;
+    --color-blush: #fdf5f2;
+  }
+
+  html, body {
+    background-color: #1a040b;
+    color: #2A050D;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-cinzel-decorative {
+    font-family: 'Cinzel Decorative', serif;
+  }
+
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .font-serif-royal {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom Royal Golden Gradient and Border Utilities */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFE89E 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text-shimmer {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF5D0 30%, #D4AF37 60%, #AA7C11 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+.maroon-text-gradient {
+  background: linear-gradient(135deg, #5B0B19 0%, #8B1E3F 50%, #4A0E17 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), inset 0 0 15px rgba(212, 175, 55, 0.05);
+}
+
+.gold-box-shadow {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.2);
+}
+
+.ivory-card-shadow {
+  box-shadow: 0 15px 35px -5px rgba(103, 20, 32, 0.08), 0 0 0 1px rgba(212, 175, 55, 0.35);
+}
+
+.maroon-card-bg {
+  background: radial-gradient(circle at 50% 0%, rgba(103, 20, 32, 0.5) 0%, rgba(42, 5, 13, 0.85) 100%);
+  backdrop-filter: blur(12px);
+}
+
+/* Indian ornamental pattern overlays */
+.mandala-pattern {
+  background-image: radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.mandala-pattern-light {
+  background-image: radial-gradient(circle at center, rgba(139, 30, 63, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Ornate Corner Accents */
+.ornate-corner-card {
+  position: relative;
+}
+.ornate-corner-card::before,
+.ornate-corner-card::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: #D4AF37;
+  pointer-events: none;
+}
+.ornate-corner-card::before {
+  top: 8px;
+  left: 8px;
+  border-top: 1.5px solid #D4AF37;
+  border-left: 1.5px solid #D4AF37;
+}
+.ornate-corner-card::after {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 1.5px solid #D4AF37;
+  border-right: 1.5px solid #D4AF37;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a040b;
+}
+::-webkit-scrollbar-thumb {
+  background: #4A0E17;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #671420;
+}
