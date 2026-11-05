@@ -34,7 +34,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, phone, guests, attending, message } = req.body;
+    const { name, phone, guests, joiningDate, attending, message } = req.body;
 
     const mailOptions = {
       from: '"Raja & Karishma Royal Wedding" <prashantkrjha12@gmail.com>',
@@ -61,6 +61,10 @@ export default async function handler(req, res) {
               <td style="padding: 10px; border: 1px solid #D4AF37;">${guests}</td>
             </tr>
             <tr>
+              <td style="padding: 10px; font-weight: bold; border: 1px solid #D4AF37;">Date of Joining Event</td>
+              <td style="padding: 10px; border: 1px solid #D4AF37; font-weight: bold; color: #8B1E3F;">${joiningDate || '10 December 2026'}</td>
+            </tr>
+            <tr style="background-color: #F3E5AB;">
               <td style="padding: 10px; font-weight: bold; border: 1px solid #D4AF37;">Attending Status</td>
               <td style="padding: 10px; border: 1px solid #D4AF37; font-weight: bold; color: ${attending === 'yes' ? '#2e7d32' : '#c62828'};">
                 ${attending === 'yes' ? '✅ Attending with Joy' : '❌ Regretfully Declining'}

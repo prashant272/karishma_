@@ -36,7 +36,7 @@ export default function Navbar({ isAudioPlaying, toggleAudio }) {
         <a href="#home" className="flex items-center gap-2 group">
           <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#996515] to-[#FFE89E] p-[1.5px] shadow-md">
             <div className="w-full h-full rounded-full bg-[#3B0712] flex items-center justify-center">
-              <span className="font-serif-royal font-bold text-sm tracking-wide text-[#FFE89E]">
+              <span className="font-serif-royal italic font-bold text-sm tracking-normal text-[#FFE89E] pr-0.5">
                 KaRa
               </span>
             </div>

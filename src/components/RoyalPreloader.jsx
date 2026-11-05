@@ -4,7 +4,7 @@ import { GaneshIcon } from './Ornaments';
 const CRITICAL_IMAGES = [
   '/envelope_entry_bg.jpg',
   '/invitation_floral_bg.jpg',
-  '/hero_mandap_sunset.jpg',
+  '/resort_venue_real.jpg',
   '/events/haldi_banner.jpg',
   '/events/pool_party_banner.jpg',
   '/events/muhuratham_banner.jpg'
@@ -54,12 +54,16 @@ export default function RoyalPreloader({ onLoaded }) {
 
       <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-sm w-full">
         {/* Lord Ganesha Icon */}
-        <div className="mb-4">
-          <GaneshIcon className="w-14 h-14 text-[#D4AF37] animate-pulse filter drop-shadow-[0_4px_15px_rgba(212,175,55,0.6)]" />
+        <div className="mb-4 relative w-16 h-16 flex items-center justify-center">
+          <img
+            src="/ganesh_perfect_gold.png"
+            alt="Lord Ganesha"
+            className="w-full h-full object-contain animate-pulse filter drop-shadow-[0_4px_15px_rgba(212,175,55,0.7)]"
+          />
         </div>
 
         <p className="font-cinzel text-xs tracking-[0.35em] text-[#FFE89E] uppercase font-bold mb-2">
-          Shubh Vivah &bull; Royal Invitation
+          Shubh Vivah &bull; Invitation
         </p>
 
         <h1 className="font-cinzel-decorative font-bold text-2xl sm:text-3xl gold-text-shimmer mb-6 tracking-wide">

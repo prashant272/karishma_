@@ -76,7 +76,7 @@ function App() {
             <EventsSection events={weddingData.events} />
 
             {/* 5. Wedding Day Timeline (Wedding Day Celebrations bar) */}
-            <StorySection celebrations={weddingData.celebrations} />
+            {/* <StorySection celebrations={weddingData.celebrations} /> */}
 
             {/* 6. Wedding Venue (Sai Priya Beach Resort Visakhapatnam card with directions) */}
             <VenueSection weddingDetails={weddingData.weddingDetails} />

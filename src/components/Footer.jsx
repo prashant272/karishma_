@@ -8,7 +8,13 @@ export default function Footer({ weddingData }) {
         
         {/* Sacred blessing */}
         <div className="flex justify-center mb-3">
-          <GaneshIcon className="w-10 h-10 text-[#D4AF37]" />
+          <div className="relative w-12 h-12 flex items-center justify-center">
+            <img
+              src="/ganesh_perfect_gold.png"
+              alt="Lord Ganesha"
+              className="w-full h-full object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.6)]"
+            />
+          </div>
         </div>
         
         <p className="font-cinzel text-xs tracking-[0.3em] text-[#FFE89E] uppercase mb-3 font-semibold">
@@ -45,7 +51,7 @@ export default function Footer({ weddingData }) {
           </div>
 
           <p className="mt-2.5 font-cinzel text-[10px] tracking-[0.3em] text-[#FAF5EB]/50 uppercase font-semibold">
-            Royal Wedding Invitation
+            Wedding Invitation
           </p>
         </div>
       </div>

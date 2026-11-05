@@ -58,7 +58,7 @@ export default function RoyalScratchCard({ onScratched, children }) {
     ctx.fillText('✨ SCRATCH HERE TO REVEAL ✨', width / 2, height / 2 - 20);
 
     ctx.font = 'italic 15px "Playfair Display", serif';
-    ctx.fillText('Touch & scratch to unfold the royal invitation', width / 2, height / 2 + 15);
+    ctx.fillText('Touch & scratch to unfold the invitation', width / 2, height / 2 + 15);
 
     let totalPixels = 0;
     let scratchedPixels = 0;

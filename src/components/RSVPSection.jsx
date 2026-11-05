@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, CheckCircle2, User, Phone, Users, MessageSquare, Mail } from 'lucide-react';
+import { Send, CheckCircle2, User, Phone, Users, MessageSquare, Mail, Calendar } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { GoldenDivider } from './Ornaments';
 import { sendRSVPEmail } from '../api';
@@ -18,6 +18,7 @@ export default function RSVPSection() {
     name: '',
     phone: '',
     guests: '2 Guests',
+    joiningDate: '10 December 2026',
     attending: 'yes',
     message: ''
   });
@@ -116,8 +117,8 @@ export default function RSVPSection() {
                   </div>
                 </div>
 
-                {/* Mobile Number & Guests Count in 2 columns */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {/* Mobile Number, Guests Count & Date of Joining Event in responsive grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                   {/* Mobile Number */}
                   <div>
                     <label className="block font-cinzel text-xs uppercase tracking-widest text-[#8B1E3F] mb-2 font-semibold">
@@ -155,6 +156,28 @@ export default function RSVPSection() {
                         <option value="3 Guests">3 Guests</option>
                         <option value="4 Guests">4 Guests</option>
                         <option value="5+ Guests">5+ Guests (Family)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Date of Joining Event */}
+                  <div>
+                    <label className="block font-cinzel text-xs uppercase tracking-widest text-[#8B1E3F] mb-2 font-semibold">
+                      Date of Joining Event *
+                    </label>
+                    <div className="relative">
+                      <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#D4AF37]" />
+                      <select
+                        name="joiningDate"
+                        value={formData.joiningDate}
+                        onChange={handleChange}
+                        className="w-full pl-11 pr-4 py-3 rounded-xl bg-[#FAF5EB]/60 border border-[#D4AF37]/40 text-[#2A050D] focus:outline-none focus:border-[#8B1E3F] focus:ring-1 focus:ring-[#8B1E3F] transition-all text-sm font-serif-royal cursor-pointer"
+                      >
+                        <option value="10 December 2026 (All Events)">10 Dec 2026 (All Events)</option>
+                        <option value="10 Dec - Haldi Ceremony (Morning)">10 Dec - Haldi (11 AM)</option>
+                        <option value="10 Dec - Pool Party (Afternoon)">10 Dec - Pool Party (4 PM)</option>
+                        <option value="10 Dec - Muhuratham (Evening)">10 Dec - Muhuratham (7 PM)</option>
+                        <option value="09 December 2026 (Early Arrival)">09 Dec 2026 (Early Arrival)</option>
                       </select>
                     </div>
                   </div>

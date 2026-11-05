@@ -29,9 +29,6 @@ export default function VenueSection({ weddingDetails }) {
         
         {/* Section Header */}
         <div className="text-center mb-6">
-          <span className="font-cinzel text-xs tracking-[0.25em] text-[#8B1E3F] uppercase font-bold block mb-1">
-            Destination of Royalty
-          </span>
           <h2 className="font-cinzel text-3xl md:text-5xl font-bold maroon-text-gradient tracking-wide uppercase">
             Wedding Venue
           </h2>
@@ -49,7 +46,7 @@ export default function VenueSection({ weddingDetails }) {
           {/* Left Column: Venue Picture with Rounded Corner Frame */}
           <div className="lg:col-span-6 relative min-h-[280px] lg:min-h-[380px] overflow-hidden bg-[#FAF5EB]">
             <img
-              src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcTCJAZwo4ltNOzrhpk-AajX2i4JqpDR_3MmJjk1Clyd8MsDZF-eR7fKUUCKF5-51eDJhtTGBNcYNq-O3b-mUdfzS2deGRV3I5xwu3cGrKmAYn8V27r4n63K9wl4-vft97Afk=s680-w680-h510-rw"
+              src="/resort_venue_real.jpg"
               alt="Sai Priya Beach Resort Visakhapatnam"
               className="w-full h-full object-cover object-center"
             />

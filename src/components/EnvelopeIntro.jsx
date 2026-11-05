@@ -50,7 +50,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
 
     setTimeout(() => {
       onOpen();
-    }, 4200);
+    }, 5200);
   };
 
   return (
@@ -96,9 +96,13 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
               transition={{ duration: 0.8 }}
               className="flex flex-col items-center justify-center mb-3 sm:mb-4"
             >
-              {/* Golden Ganesha Crest */}
-              <div className="mb-1">
-                <GaneshIcon className="w-9 h-9 sm:w-11 sm:h-11 text-[#D4AF37] filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)]" />
+              {/* Golden Ganesha Crest using real transparent artwork */}
+              <div className="mb-2 relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center">
+                <img
+                  src="/ganesh_perfect_gold.png"
+                  alt="Lord Ganesha"
+                  className="w-full h-full object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.6)]"
+                />
               </div>
 
               {/* Shree Ganeshay Namah flanked by arrows */}
@@ -112,7 +116,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
 
               {/* Subheading: Together With Their Families in Calligraphic script */}
               <h2 className="font-script text-2xl sm:text-3xl md:text-4xl text-[#520A17] mt-1 font-normal tracking-wide">
-                Together With Their Families
+               Together with Their Families ❤️
               </h2>
 
               {/* Golden delicate ornamental motif */}
@@ -151,25 +155,25 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
             <div className="w-full flex items-center justify-between">
               <span className="w-3.5 h-3.5 border-t-2 border-l-2 border-[#8B1E3F]" />
               <span className="font-cinzel text-[10px] sm:text-xs tracking-[0.3em] text-[#8B1E3F] uppercase font-bold">
-                Royal Invitation
+                Invitation
               </span>
               <span className="w-3.5 h-3.5 border-t-2 border-r-2 border-[#8B1E3F]" />
             </div>
 
             {/* Card Names & Details */}
-            <div className="my-auto py-2">
-              <p className="font-serif-royal italic text-xs sm:text-sm text-[#671420]">
-                {weddingData.weddingDetails.invitationHonor}
+            <div className="my-auto py-2 space-y-1.5">
+              <p className="font-serif-royal italic text-xs sm:text-sm text-[#8B1E3F] tracking-wide">
+                Together With Their Families
               </p>
-              <h1 className="font-cinzel-decorative font-bold text-2xl sm:text-3xl text-[#4A0E17] my-1">
+              
+              <h1 className="font-cinzel-decorative font-bold text-2xl sm:text-3xl text-[#4A0E17] my-1 tracking-wide">
                 {weddingData.bride.name} & {weddingData.groom.name}
               </h1>
-              <p className="font-script text-xl sm:text-2xl text-[#8B1E3F]">
-                Together with their families
-              </p>
-              <div className="h-[1.5px] w-28 bg-[#D4AF37] mx-auto my-2" />
-              <p className="font-cinzel text-xs sm:text-sm tracking-wider text-[#2A050D] font-bold">
-                {weddingData.weddingDetails.dateText} &bull; {weddingData.weddingDetails.city}
+
+              <div className="h-[1px] w-24 bg-[#D4AF37] mx-auto my-2" />
+
+              <p className="font-cinzel text-[11px] sm:text-xs tracking-[0.25em] text-[#671420] font-semibold uppercase max-w-xs mx-auto leading-relaxed">
+                Request The Pleasure Of Your Company At Their Wedding Celebrations
               </p>
             </div>
 
@@ -243,13 +247,13 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
                 className="absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 z-40 flex flex-col items-center"
               >
                 {/* Scalloped Red Wax Seal */}
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-[#520A17] via-[#8B1E3F] to-[#520A17] p-1 shadow-[0_8px_25px_rgba(74,14,23,0.55)] border-2 border-[#FFE89E] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <div className="relative w-18 h-18 sm:w-22 sm:h-22 rounded-full bg-gradient-to-tr from-[#420711] via-[#7B1832] to-[#420711] p-1.5 shadow-[0_10px_30px_rgba(74,14,23,0.65)] border-2 border-[#D4AF37] flex items-center justify-center group-hover:scale-105 transition-transform">
                   {/* Inner Beaded Ring */}
-                  <div className="w-full h-full rounded-full border border-dashed border-[#FFE89E]/60 flex flex-col items-center justify-center">
-                    <span className="font-serif-royal font-bold text-sm sm:text-base text-[#FFE89E] tracking-widest drop-shadow">
+                  <div className="w-full h-full rounded-full border border-dashed border-[#FFE89E]/70 bg-gradient-to-b from-[#651022] to-[#420711] flex flex-col items-center justify-center shadow-inner">
+                    <span className="font-serif-royal italic font-bold text-lg sm:text-xl text-[#FFE89E] tracking-wider drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] pr-0.5">
                       KaRa
                     </span>
-                    <span className="text-[#FFE89E] text-[10px] -mt-0.5">♥</span>
+                    <span className="text-[#D4AF37] text-[9px] -mt-1 opacity-90">❧</span>
                   </div>
                 </div>
 

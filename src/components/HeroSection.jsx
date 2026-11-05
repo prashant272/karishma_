@@ -66,15 +66,21 @@ export default function HeroSection({ weddingData }) {
       {/* Main Content Box - Fluid responsive container */}
       <div className="relative z-20 max-w-4xl w-full mx-auto flex flex-col items-center justify-center text-center my-auto py-1 sm:py-2">
         
-        {/* Lord Ganesha auspicious blessing */}
+        {/* Lord Ganesha auspicious blessing with user's clean cropped golden artwork */}
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="flex flex-col items-center justify-center mb-3 sm:mb-4"
+          className="flex flex-col items-center justify-center mb-2 sm:mb-3"
         >
-          <GaneshIcon className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 text-[#D4AF37] filter drop-shadow-[0_4px_10px_rgba(212,175,55,0.5)]" />
-          <p className="font-cinzel text-[10px] sm:text-xs md:text-sm tracking-[0.32em] sm:tracking-[0.38em] text-[#FFE89E] mt-1.5 sm:mt-2 uppercase font-semibold">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+            <img
+              src="/ganesh_perfect_gold.png"
+              alt="Lord Ganesha"
+              className="w-full h-full object-contain filter drop-shadow-[0_2px_14px_rgba(212,175,55,0.75)]"
+            />
+          </div>
+          <p className="font-cinzel text-[11px] sm:text-xs md:text-sm tracking-[0.32em] sm:tracking-[0.38em] text-[#FFE89E] mt-1 sm:mt-1.5 uppercase font-semibold">
             Shree Ganeshay Namah
           </p>
         </motion.div>
@@ -99,9 +105,9 @@ export default function HeroSection({ weddingData }) {
           className="my-2 sm:my-3 md:my-5 w-full overflow-visible py-1 flex flex-col items-center"
         >
           {/* KaRa Royal Monogram Badge */}
-          <div className="inline-flex items-center justify-center gap-2 mb-2 sm:mb-3 px-4 py-1 rounded-full bg-gradient-to-r from-[#671420]/70 via-[#D4AF37]/25 to-[#671420]/70 border border-[#D4AF37]/60 shadow-[0_4px_15px_rgba(212,175,55,0.25)]">
+          <div className="inline-flex items-center justify-center gap-2 mb-2 sm:mb-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-[#420711]/90 via-[#651022]/80 to-[#420711]/90 border border-[#D4AF37]/70 shadow-[0_4px_18px_rgba(212,175,55,0.35)]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-ping" />
-            <span className="font-serif-royal font-bold text-base sm:text-lg md:text-xl tracking-[0.2em] text-[#FFE89E] drop-shadow">
+            <span className="font-serif-royal italic font-bold text-lg sm:text-xl md:text-2xl tracking-[0.15em] text-[#FFE89E] drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
               #KaRa
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-ping" />
@@ -125,39 +131,17 @@ export default function HeroSection({ weddingData }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.45, duration: 0.7 }}
-          className="max-w-xl mx-auto font-serif-royal italic text-xs sm:text-sm md:text-base text-[#FAF5EB]/90 leading-relaxed px-4 my-1.5 sm:my-3"
+          className="max-w-xl mx-auto font-serif-royal italic text-xs sm:text-sm md:text-base text-[#FAF5EB]/90 leading-relaxed px-4 my-2 sm:my-3"
         >
           "{weddingData.weddingDetails.subheading}"
         </motion.p>
-
-        {/* Date & Venue Badges - Mobile compact & Desktop full */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.7 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-5 my-2.5 sm:my-4 w-full max-w-2xl px-2"
-        >
-          <div className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-[#2A050D]/85 border border-[#D4AF37]/50 shadow-md text-[#FFE89E] text-[11px] sm:text-xs md:text-sm backdrop-blur-sm">
-            <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D4AF37] flex-shrink-0" />
-            <span className="font-cinzel tracking-wider font-semibold whitespace-nowrap">
-              {weddingData.weddingDetails.dateText}
-            </span>
-          </div>
-
-          <div className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-[#2A050D]/85 border border-[#D4AF37]/50 shadow-md text-[#FFE89E] text-[11px] sm:text-xs md:text-sm backdrop-blur-sm">
-            <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D4AF37] flex-shrink-0" />
-            <span className="font-cinzel tracking-wider font-semibold truncate max-w-[260px] sm:max-w-none">
-              {weddingData.weddingDetails.venueName}, {weddingData.weddingDetails.city}
-            </span>
-          </div>
-        </motion.div>
 
         {/* Countdown Timer - Mobile fluid grid */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.75, duration: 0.7 }}
-          className="w-full max-w-[320px] sm:max-w-md mx-auto mt-2 sm:mt-4"
+          transition={{ delay: 0.65, duration: 0.7 }}
+          className="w-full max-w-[320px] sm:max-w-md mx-auto mt-3 sm:mt-5"
         >
           <div className="grid grid-cols-4 gap-1.5 sm:gap-3 p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#2A050D]/85 border border-[#D4AF37]/45 shadow-[0_12px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
             {[

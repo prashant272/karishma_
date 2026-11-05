@@ -53,7 +53,7 @@ export const weddingData = {
     },
     {
       id: "pool-party",
-      name: "Pool Party",
+      name: "Class Of fun and music",
       tagline: "Sun-kissed music, ocean breeze & celebration by the pool",
       date: "December 10, 2026",
       time: "04:00 PM - 05:00 PM",

@@ -23,7 +23,7 @@ export async function sendRSVPEmail(rsvpData) {
         phone: rsvpData.phone,
         guests: rsvpData.guests,
         attending: rsvpData.attending === "yes" ? "Attending with Joy (Yes)" : "Regretfully Declining (No)",
-        message: `Mobile: ${rsvpData.phone} | Guests: ${rsvpData.guests} | Status: ${rsvpData.attending} | Blessings: ${rsvpData.message || 'None'}`
+        message: `Mobile: ${rsvpData.phone} | Guests: ${rsvpData.guests} | Joining Date: ${rsvpData.joiningDate || '10 Dec 2026'} | Status: ${rsvpData.attending} | Blessings: ${rsvpData.message || 'None'}`
       })
     });
     const result = await res.json();
