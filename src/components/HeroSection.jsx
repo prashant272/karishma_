@@ -45,12 +45,12 @@ export default function HeroSection({ weddingData }) {
       id="home"
       className="relative w-full min-h-[580px] sm:min-h-[640px] md:min-h-[720px] lg:min-h-screen flex flex-col justify-center items-center pt-14 sm:pt-16 md:pt-20 pb-8 sm:pb-10 md:pb-14 px-3 sm:px-6 lg:px-8 overflow-hidden bg-[#180307]"
     >
-      {/* Background Image - full bleed, optimized object positioning across screen widths */}
+      {/* Background Image - perfectly positioned and scaled on mobile & desktop */}
       <div className="absolute inset-0 z-0">
         <img
           src={weddingData.weddingDetails.heroImage}
           alt="Royal Beachfront Mandap Sunset"
-          className="w-full h-full object-cover object-[center_35%] sm:object-[center_30%] md:object-center filter brightness-[0.78] contrast-[1.05]"
+          className="w-full h-full object-cover object-[70%_center] sm:object-[center_35%] md:object-center filter brightness-[0.78] contrast-[1.05]"
           fetchPriority="high"
           decoding="sync"
         />

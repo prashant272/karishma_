@@ -26,12 +26,12 @@ export default function Footer({ weddingData }) {
 
         <GoldenDivider className="my-6" />
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-cinzel text-[#FAF5EB]/70 tracking-wider">
-          <span>#KaRaWedding</span>
-          <span className="hidden sm:inline">&bull;</span>
-          <span>{weddingData.weddingDetails.dateText}</span>
-          <span className="hidden sm:inline">&bull;</span>
-          <span>{weddingData.weddingDetails.venueName}</span>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-serif-royal text-[#FAF5EB]/80 tracking-wider">
+          <span className="font-bold text-[#FFE89E] tracking-widest text-sm">#KaRa</span>
+          <span className="hidden sm:inline text-[#D4AF37]">&bull;</span>
+          <span className="font-cinzel">{weddingData.weddingDetails.dateText}</span>
+          <span className="hidden sm:inline text-[#D4AF37]">&bull;</span>
+          <span className="font-cinzel">{weddingData.weddingDetails.venueName}</span>
         </div>
 
         {/* Royal Families Signature Badge */}
