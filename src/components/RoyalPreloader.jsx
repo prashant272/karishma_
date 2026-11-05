@@ -56,7 +56,7 @@ export default function RoyalPreloader({ onLoaded }) {
         {/* Lord Ganesha Icon */}
         <div className="mb-4 relative w-16 h-16 flex items-center justify-center">
           <img
-            src="/ganesh_perfect_gold.png"
+            src="/ganesh_exact_user.png"
             alt="Lord Ganesha"
             className="w-full h-full object-contain animate-pulse filter drop-shadow-[0_4px_15px_rgba(212,175,55,0.7)]"
           />

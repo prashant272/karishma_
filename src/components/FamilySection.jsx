@@ -102,6 +102,17 @@ export default function FamilySection({ groom, bride }) {
                     Smt. Chakra Lakshmi Jyothula &amp; Shri Rambabu Jyothula
                   </p>
                 </div>
+
+                <div className="w-16 h-[1.5px] bg-[#D4AF37] mx-auto my-2" />
+
+                <div>
+                  <span className="font-serif-royal italic text-sm sm:text-base text-[#8B1E3F] font-bold block mb-1">
+                    Grandson of
+                  </span>
+                  <p className="font-serif-royal text-base sm:text-lg text-[#2A050D] font-bold leading-tight">
+                    Lt. Nukaratnam &amp; Lt. Venkata Rama Raju
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -159,7 +170,7 @@ export default function FamilySection({ groom, bride }) {
                     Granddaughter of
                   </span>
                   <p className="font-serif-royal text-base sm:text-lg text-[#2A050D] font-bold leading-tight">
-                    Late Annupurna Devi &amp; Shri Ganga Prasad Kumar
+                    Lt. Annupurna Devi &amp; Shri Ganga Prasad Kumar
                   </p>
                 </div>
               </div>

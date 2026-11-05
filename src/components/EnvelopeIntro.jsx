@@ -99,7 +99,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
               {/* Golden Ganesha Crest using real transparent artwork */}
               <div className="mb-2 relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center">
                 <img
-                  src="/ganesh_perfect_gold.png"
+                  src="/ganesh_exact_user.png"
                   alt="Lord Ganesha"
                   className="w-full h-full object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.6)]"
                 />

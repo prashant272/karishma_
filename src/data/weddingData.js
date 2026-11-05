@@ -17,7 +17,7 @@ export const weddingData = {
     image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
     family: [
       { relation: "Grandfather", name: "Shri Ganga Prasad kumar" },
-      { relation: "Grandmother", name: "Late Annupurna Devi" },
+      { relation: "Grandmother", name: "Lt. Annupurna Devi" },
       { relation: "Father", name: "Shri Debki Nandan Kumar" },
       { relation: "Mother", name: "Smt Sanjula Devi" },
       { relation: "Brother-in-law", name: "Lalit kumar" },

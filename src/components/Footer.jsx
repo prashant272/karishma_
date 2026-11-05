@@ -10,7 +10,7 @@ export default function Footer({ weddingData }) {
         <div className="flex justify-center mb-3">
           <div className="relative w-12 h-12 flex items-center justify-center">
             <img
-              src="/ganesh_perfect_gold.png"
+              src="/ganesh_exact_user.png"
               alt="Lord Ganesha"
               className="w-full h-full object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.6)]"
             />

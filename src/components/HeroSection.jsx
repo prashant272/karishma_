@@ -66,18 +66,18 @@ export default function HeroSection({ weddingData }) {
       {/* Main Content Box - Fluid responsive container */}
       <div className="relative z-20 max-w-4xl w-full mx-auto flex flex-col items-center justify-center text-center my-auto py-1 sm:py-2">
         
-        {/* Lord Ganesha auspicious blessing with user's clean cropped golden artwork */}
+        {/* Lord Ganesha auspicious blessing with user's exact uploaded image */}
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           className="flex flex-col items-center justify-center mb-2 sm:mb-3"
         >
-          <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center">
             <img
-              src="/ganesh_perfect_gold.png"
+              src="/ganesh_exact_user.png"
               alt="Lord Ganesha"
-              className="w-full h-full object-contain filter drop-shadow-[0_2px_14px_rgba(212,175,55,0.75)]"
+              className="w-full h-full object-contain filter drop-shadow-[0_2px_12px_rgba(212,175,55,0.7)]"
             />
           </div>
           <p className="font-cinzel text-[11px] sm:text-xs md:text-sm tracking-[0.32em] sm:tracking-[0.38em] text-[#FFE89E] mt-1 sm:mt-1.5 uppercase font-semibold">
