@@ -91,24 +91,33 @@ export default function HeroSection({ weddingData }) {
           </span>
         </motion.div>
 
-        {/* Couple Names - Highly responsive font scaling avoiding wrapping breakages */}
+        {/* Couple Names & KaRa Royal Crest Styling */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.7 }}
-          className="my-2 sm:my-3 md:my-5 w-full overflow-visible py-1"
+          className="my-2 sm:my-3 md:my-5 w-full overflow-visible py-1 flex flex-col items-center"
         >
-          <h1 className="font-cinzel-decorative font-bold leading-tight flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-5 px-2">
+          {/* KaRa Royal Monogram Badge */}
+          <div className="inline-flex items-center justify-center gap-2 mb-2 sm:mb-3 px-4 py-1 rounded-full bg-gradient-to-r from-[#671420]/70 via-[#D4AF37]/25 to-[#671420]/70 border border-[#D4AF37]/60 shadow-[0_4px_15px_rgba(212,175,55,0.25)]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-ping" />
+            <span className="font-serif-royal font-bold text-base sm:text-lg md:text-xl tracking-[0.2em] text-[#FFE89E] drop-shadow">
+              #KaRa
+            </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-ping" />
+          </div>
+
+          {/* <h1 className="font-cinzel-decorative font-bold leading-tight flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-5 px-2">
             <span className="text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl lg:text-7xl gold-text-shimmer drop-shadow-md tracking-wide">
-              {weddingData.groom.name}
+              {weddingData.bride.name}
             </span>
             <span className="font-script text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl text-[#FFE89E] font-normal px-1">
               &
             </span>
             <span className="text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl lg:text-7xl gold-text-shimmer drop-shadow-md tracking-wide">
-              {weddingData.bride.name}
+              {weddingData.groom.name}
             </span>
-          </h1>
+          </h1> */}
         </motion.div>
 
         {/* Subheading Invitation Text */}

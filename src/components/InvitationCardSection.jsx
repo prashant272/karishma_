@@ -58,10 +58,10 @@ export default function InvitationCardSection({ weddingData }) {
                 </span>
               </div>
 
-              {/* Couple Calligraphy Names */}
+              {/* Couple Calligraphy Names: Bride first, then Groom */}
               <div className="my-2 py-1 w-full overflow-visible">
                 <h2 className="font-script text-4xl sm:text-6xl md:text-7xl maroon-text-gradient drop-shadow-sm font-normal leading-tight">
-                  {weddingData.groom.name} & {weddingData.bride.name}
+                  {weddingData.bride.name} & {weddingData.groom.name}
                 </h2>
               </div>
 
@@ -85,8 +85,8 @@ export default function InvitationCardSection({ weddingData }) {
               {/* Wax Seal Badge with Royal Initials & Golden Tassels (positioned comfortably inside base) */}
               <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center z-30">
                 <div className="relative w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-gradient-to-tr from-[#671420] via-[#8B1E3F] to-[#4A0E17] p-1 shadow-[0_8px_25px_rgba(103,20,32,0.45)] border-2 border-[#FFE89E] flex items-center justify-center">
-                  <span className="font-cinzel-decorative font-bold text-sm sm:text-base text-[#FFE89E] tracking-widest drop-shadow">
-                    R&K
+                  <span className="font-serif-royal font-bold text-sm sm:text-base text-[#FFE89E] tracking-widest drop-shadow">
+                    KaRa
                   </span>
                   {/* Golden Hanging Tassels */}
                   <div className="absolute -bottom-4 flex gap-1 pointer-events-none">

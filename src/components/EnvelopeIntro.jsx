@@ -162,7 +162,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
                 {weddingData.weddingDetails.invitationHonor}
               </p>
               <h1 className="font-cinzel-decorative font-bold text-2xl sm:text-3xl text-[#4A0E17] my-1">
-                {weddingData.groom.name} & {weddingData.bride.name}
+                {weddingData.bride.name} & {weddingData.groom.name}
               </h1>
               <p className="font-script text-xl sm:text-2xl text-[#8B1E3F]">
                 Together with their families
@@ -246,8 +246,8 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-[#520A17] via-[#8B1E3F] to-[#520A17] p-1 shadow-[0_8px_25px_rgba(74,14,23,0.55)] border-2 border-[#FFE89E] flex items-center justify-center group-hover:scale-105 transition-transform">
                   {/* Inner Beaded Ring */}
                   <div className="w-full h-full rounded-full border border-dashed border-[#FFE89E]/60 flex flex-col items-center justify-center">
-                    <span className="font-cinzel-decorative font-bold text-xs sm:text-sm text-[#FFE89E] tracking-widest drop-shadow">
-                      R&K
+                    <span className="font-serif-royal font-bold text-sm sm:text-base text-[#FFE89E] tracking-widest drop-shadow">
+                      KaRa
                     </span>
                     <span className="text-[#FFE89E] text-[10px] -mt-0.5">♥</span>
                   </div>

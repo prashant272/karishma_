@@ -138,15 +138,14 @@ export default function FamilySection({ groom, bride }) {
 
               <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mb-4 opacity-70" />
 
-              {/* Exact user bride family details */}
+              {/* Exact user bride family details - only Mother & Father as requested */}
               <p className="font-serif-royal text-sm sm:text-base text-[#2A050D] font-medium leading-relaxed">
-                Shri Debki Nandan Kumar & Smt. Sanjula Devi
+                Smt. Sanjula Devi
               </p>
-              
-              <div className="pt-3 mt-3 border-t border-[#D4AF37]/30 text-xs text-[#8B1E3F]/85 space-y-1 font-serif-royal">
-                <p>Grandparents: Shri Ganga Prasad kumar & Late Annupurna Devi</p>
-                <p>Sister & Brother-in-law: Priyanka Kumari & Lalit kumar</p>
-              </div>
+              <p className="font-serif-royal italic text-xs text-[#8B1E3F]/80 my-1">&</p>
+              <p className="font-serif-royal text-sm sm:text-base text-[#2A050D] font-medium leading-relaxed">
+                Shri Debki Nandan Kumar
+              </p>
             </div>
           </motion.div>
 
