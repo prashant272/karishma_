@@ -85,7 +85,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
 
       {/* Center Content Wrapper */}
       <div className="relative z-20 w-full max-w-[560px] mx-auto flex flex-col items-center justify-center text-center my-auto py-2">
-        
+
         {/* Top Floating Crest Header */}
         <AnimatePresence>
           {!isOpening && (
@@ -116,7 +116,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
 
               {/* Subheading: Together With Their Families in Calligraphic script */}
               <h2 className="font-script text-2xl sm:text-3xl md:text-4xl text-[#520A17] mt-1 font-normal tracking-wide">
-               Together with Their Families ❤️
+                The wedding celebrations of
               </h2>
 
               {/* Golden delicate ornamental motif */}
@@ -163,9 +163,9 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
             {/* Card Names & Details */}
             <div className="my-auto py-2 space-y-1.5">
               <p className="font-serif-royal italic text-xs sm:text-sm text-[#8B1E3F] tracking-wide">
-                Together With Their Families
+                The wedding celebrations of
               </p>
-              
+
               <h1 className="font-cinzel-decorative font-bold text-2xl sm:text-3xl text-[#4A0E17] my-1 tracking-wide">
                 {weddingData.bride.name} & {weddingData.groom.name}
               </h1>
@@ -173,7 +173,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
               <div className="h-[1px] w-24 bg-[#D4AF37] mx-auto my-2" />
 
               <p className="font-cinzel text-[11px] sm:text-xs tracking-[0.25em] text-[#671420] font-semibold uppercase max-w-xs mx-auto leading-relaxed">
-                Request The Pleasure Of Your Company At Their Wedding Celebrations
+                Request The Pleasure Of Your Company At Our Wedding Celebrations
               </p>
             </div>
 
@@ -288,7 +288,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
 
           {/* Subtitle helper prompt */}
           <p className="text-[10px] sm:text-xs text-[#520A17] tracking-wider mt-3 font-cinzel font-semibold uppercase">
-            Click the wax seal or button to unfold the royal celebration
+            Click the wax seal or button to unfold the celebration
           </p>
 
           {/* Bottom floral accent */}

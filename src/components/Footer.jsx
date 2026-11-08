@@ -18,7 +18,7 @@ export default function Footer({ weddingData }) {
         </div>
         
         <p className="font-cinzel text-xs tracking-[0.3em] text-[#FFE89E] uppercase mb-3 font-semibold">
-          Shubh Vivah &bull; Royal Wedding
+          Shubh Vivah 
         </p>
 
         {/* Monogram */}

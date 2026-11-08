@@ -31,7 +31,7 @@ export default function FamilySection({ groom, bride }) {
 
       <div className="max-w-5xl w-full mx-auto relative z-10 flex flex-col items-center">
         
-        {/* Section Header (exact match with 2nd reference image) */}
+        {/* Section Header matching exact reference */}
         <motion.div
           initial={{ opacity: 0, y: -15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,22 +39,22 @@ export default function FamilySection({ groom, bride }) {
           transition={{ duration: 0.7 }}
           className="text-center mb-6 md:mb-8"
         >
-          <span className="font-cinzel text-xs md:text-sm tracking-[0.3em] text-[#8B1E3F] uppercase font-bold block mb-1">
-            Two Families, One Promise ❤️
+          <span className="font-cinzel text-[11px] sm:text-xs tracking-[0.35em] text-[#671420] uppercase font-semibold block mb-1">
+            TWO FAMILIES, ONE PROMISE
           </span>
-          <h2 className="font-cinzel text-3xl md:text-5xl font-bold maroon-text-gradient tracking-wider uppercase">
+          <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-medium text-[#2A050D] tracking-[0.08em] uppercase">
             Our Families
           </h2>
           
-          {/* Subtle horizontal ornamental divider line */}
+          {/* Subtle horizontal ornamental divider line with diamond */}
           <div className="flex items-center justify-center gap-3 mt-3">
             <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#D4AF37]" />
-            <div className="w-2 h-2 rotate-45 bg-[#D4AF37]" />
+            <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]" />
             <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#D4AF37]" />
           </div>
         </motion.div>
 
-        {/* 2 Column Family Notched Plaques (exact replica of 2nd image design) */}
+        {/* 2 Column Family Notched Plaques */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 w-full max-w-4xl">
           
           {/* Groom's Family Plaque */}
@@ -83,33 +83,29 @@ export default function FamilySection({ groom, bride }) {
               <div className="absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37]" />
               <div className="absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37]" />
 
-              {/* <span className="font-cinzel text-[10px] tracking-[0.25em] text-[#8B1E3F] uppercase font-bold block mb-1">
-                Royal Lineage
-              </span> */}
-              <h3 className="font-cinzel text-lg sm:text-xl font-bold text-[#4A0E17] uppercase tracking-wider mb-4">
-                Groom's Family
+              {/* Groom's Name in exact Calligraphic Italic Signature Font */}
+              <h3 className="font-signature text-5xl sm:text-6xl text-[#3A141A] font-normal tracking-wide mb-3 leading-none py-1">
+                {groom?.name || "Raja"}
               </h3>
 
-              <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mb-4 opacity-70" />
-
-              {/* Groom Family details with Son of lineage */}
+              {/* Groom Family details with exact typography from image */}
               <div className="space-y-4">
                 <div>
-                  <span className="font-serif-royal italic text-sm sm:text-base text-[#8B1E3F] font-bold block mb-1">
-                    Son of
+                  <span className="font-cormorant text-[12px] sm:text-[13px] tracking-[0.25em] text-[#671420] uppercase font-bold block mb-1">
+                    SON OF
                   </span>
-                  <p className="font-serif-royal text-base sm:text-lg text-[#2A050D] font-bold leading-tight">
+                  <p className="font-cormorant text-base sm:text-lg text-[#2A050D] font-medium leading-snug">
                     Smt. Chakra Lakshmi Jyothula &amp; Shri Rambabu Jyothula
                   </p>
                 </div>
 
-                <div className="w-16 h-[1.5px] bg-[#D4AF37] mx-auto my-2" />
+                <div className="w-12 h-[1px] bg-[#D4AF37]/50 mx-auto my-1.5" />
 
                 <div>
-                  <span className="font-serif-royal italic text-sm sm:text-base text-[#8B1E3F] font-bold block mb-1">
-                    Grandson of
+                  <span className="font-cormorant text-[12px] sm:text-[13px] tracking-[0.25em] text-[#671420] uppercase font-bold block mb-1">
+                    GRANDSON OF
                   </span>
-                  <p className="font-serif-royal text-base sm:text-lg text-[#2A050D] font-bold leading-tight">
+                  <p className="font-cormorant text-base sm:text-lg text-[#2A050D] font-medium leading-snug">
                     Lt. Nukaratnam &amp; Lt. Venkata Rama Raju
                   </p>
                 </div>
@@ -143,33 +139,29 @@ export default function FamilySection({ groom, bride }) {
               <div className="absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37]" />
               <div className="absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37]" />
 
-              {/* <span className="font-cinzel text-[10px] tracking-[0.25em] text-[#8B1E3F] uppercase font-bold block mb-1">
-                Noble Heritage
-              </span> */}
-              <h3 className="font-cinzel text-lg sm:text-xl font-bold text-[#4A0E17] uppercase tracking-wider mb-4">
-                Bride's Family
+              {/* Bride's Name in exact Calligraphic Italic Signature Font */}
+              <h3 className="font-signature text-5xl sm:text-6xl text-[#3A141A] font-normal tracking-wide mb-3 leading-none py-1">
+                {bride?.name || "Karishma"}
               </h3>
 
-              <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mb-4 opacity-70" />
-
-              {/* Bride Family details: First Daughter of, then Granddaughter of */}
+              {/* Bride Family details with exact typography from image */}
               <div className="space-y-4">
                 <div>
-                  <span className="font-serif-royal italic text-sm sm:text-base text-[#8B1E3F] font-bold block mb-1">
-                    Daughter of
+                  <span className="font-cormorant text-[12px] sm:text-[13px] tracking-[0.25em] text-[#671420] uppercase font-bold block mb-1">
+                    DAUGHTER OF
                   </span>
-                  <p className="font-serif-royal text-base sm:text-lg text-[#2A050D] font-bold leading-tight">
+                  <p className="font-cormorant text-base sm:text-lg text-[#2A050D] font-medium leading-snug">
                     Smt. Sanjula Devi &amp; Shri Debki Nandan Kumar
                   </p>
                 </div>
 
-                <div className="w-16 h-[1.5px] bg-[#D4AF37] mx-auto my-2" />
+                <div className="w-12 h-[1px] bg-[#D4AF37]/50 mx-auto my-1.5" />
 
                 <div>
-                  <span className="font-serif-royal italic text-sm sm:text-base text-[#8B1E3F] font-bold block mb-1">
-                    Granddaughter of
+                  <span className="font-cormorant text-[12px] sm:text-[13px] tracking-[0.25em] text-[#671420] uppercase font-bold block mb-1">
+                    GRANDDAUGHTER OF
                   </span>
-                  <p className="font-serif-royal text-base sm:text-lg text-[#2A050D] font-bold leading-tight">
+                  <p className="font-cormorant text-base sm:text-lg text-[#2A050D] font-medium leading-snug">
                     Lt. Annupurna Devi &amp; Shri Ganga Prasad Kumar
                   </p>
                 </div>

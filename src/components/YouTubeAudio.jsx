@@ -25,8 +25,7 @@ export default function YouTubeAudio({ videoId = "PGer5XYPaPk", isPlaying }) {
           width: '200',
           videoId: videoId,
           playerVars: {
-            autoplay: 1,
-            start: 10, // Start directly at 10 seconds into the melody
+            autoplay: 0,
             controls: 0,
             loop: 1,
             playlist: videoId,
@@ -35,18 +34,15 @@ export default function YouTubeAudio({ videoId = "PGer5XYPaPk", isPlaying }) {
           },
           events: {
             onReady: (event) => {
-              // Unmute, seek directly to 10s and play immediately on load
               event.target.unMute();
               event.target.setVolume(85);
-              event.target.seekTo(10, true);
               if (isPlaying) {
                 event.target.playVideo();
               }
             },
             onStateChange: (event) => {
-              // Loop back to 10s when ended
               if (event.data === window.YT.PlayerState.ENDED) {
-                event.target.seekTo(10, true);
+                event.target.seekTo(0, true);
                 event.target.playVideo();
               }
             }
@@ -78,9 +74,6 @@ export default function YouTubeAudio({ videoId = "PGer5XYPaPk", isPlaying }) {
     try {
       if (isPlaying) {
         playerRef.current.unMute();
-        if (typeof playerRef.current.getCurrentTime === 'function' && playerRef.current.getCurrentTime() < 10) {
-          playerRef.current.seekTo(10, true);
-        }
         playerRef.current.playVideo();
       } else {
         playerRef.current.pauseVideo();

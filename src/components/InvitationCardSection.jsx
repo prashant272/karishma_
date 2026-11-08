@@ -70,7 +70,7 @@ export default function InvitationCardSection({ weddingData }) {
               {/* Formal Invitation Text */}
               <div className="space-y-2.5 max-w-xl mx-auto font-cinzel">
                 <p className="text-xs sm:text-sm tracking-[0.25em] text-[#4A0E17] font-semibold uppercase leading-relaxed">
-                  Request The Pleasure Of Your Company At Their
+                  Request The Pleasure Of Your Company At Our
                 </p>
                 <p className="text-sm sm:text-base tracking-[0.3em] font-bold text-[#8B1E3F] uppercase">
                   Wedding Celebrations

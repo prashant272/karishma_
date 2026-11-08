@@ -50,8 +50,8 @@ export default function EventsSection({ events }) {
           <GoldenDivider className="mt-4" />
         </div>
 
-        {/* 3 Ceremonies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        {/* Ceremonies Grid (Responsive for 3 or 4 cards) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {events.map((evt, idx) => {
             return (
               <motion.div

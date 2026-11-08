@@ -92,9 +92,9 @@ export default function HeroSection({ weddingData }) {
           transition={{ delay: 0.15, duration: 0.7 }}
           className="mb-2 sm:mb-3"
         >
-          <span className="inline-block font-cinzel text-xs sm:text-sm md:text-base tracking-[0.24em] sm:tracking-[0.3em] text-[#FFE89E] uppercase font-medium">
+          {/* <span className="inline-block font-cinzel text-xs sm:text-sm md:text-base tracking-[0.24em] sm:tracking-[0.3em] text-[#FFE89E] uppercase font-medium">
             Two Families, One Promise
-          </span>
+          </span> */}
         </motion.div>
 
         {/* Couple Names & KaRa Royal Crest Styling */}

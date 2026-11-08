@@ -79,7 +79,7 @@ export default function RoyalPreloader({ onLoaded }) {
         </div>
 
         <p className="font-serif-royal italic text-xs text-[#FAF5EB]/70">
-          Preparing your royal experience... ({progress}%)
+          Preparing your  experience... ({progress}%)
         </p>
       </div>
     </div>
