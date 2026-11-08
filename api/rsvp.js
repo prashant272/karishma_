@@ -11,7 +11,8 @@ const transporter = nodemailer.createTransport({
 
 const TARGET_EMAILS = [
   'prashantkrjha1233@gmail.com',
-  'Karishma.jha832@gmail.com'
+  'Karishma.jha832@gmail.com',
+  'carajajyothula@gmail.com'
 ];
 
 export default async function handler(req, res) {
