@@ -38,18 +38,6 @@
   .font-serif-royal {
     font-family: 'Playfair Display', serif;
   }
-
-  .font-cormorant {
-    font-family: 'Cormorant Garamond', serif;
-  }
-
-  .font-signature {
-    font-family: 'Alex Brush', cursive;
-  }
-
-  .font-pinyon {
-    font-family: 'Pinyon Script', cursive;
-  }
 }
 
 /* Custom Royal Golden Gradient and Border Utilities */
