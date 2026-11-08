@@ -54,7 +54,7 @@ export default function InvitationCardSection({ weddingData }) {
               {/* Top Ornamental Header */}
               <div className="mb-4">
                 <span className="font-cinzel text-[10px] sm:text-xs tracking-[0.35em] text-[#8B1E3F] uppercase font-bold">
-                  Together With Their Families
+                  Together With Our Families
                 </span>
               </div>
 

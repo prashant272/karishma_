@@ -56,7 +56,7 @@ export default function VenueSection({ weddingDetails }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60" />
               <div className="absolute top-4 left-4 bg-[#2A050D]/85 border border-[#D4AF37] px-3.5 py-1.5 rounded-full text-[11px] font-cinzel text-[#FFE89E] backdrop-blur-sm shadow">
-                Wedding Venue &bull; Beachfront Resort
+                Wedding Venue
               </div>
             </div>
 
@@ -128,7 +128,7 @@ export default function VenueSection({ weddingDetails }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60" />
                 <div className="absolute top-4 left-4 bg-[#2A050D]/85 border border-[#D4AF37] px-3.5 py-1.5 rounded-full text-[11px] font-cinzel text-[#FFE89E] backdrop-blur-sm shadow">
-                  Reception Venue &bull; Grand Function Hall
+                  Reception Venue
                 </div>
               </div>
 

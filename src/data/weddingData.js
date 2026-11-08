@@ -84,7 +84,7 @@ export const weddingData = {
     {
       id: "reception",
       name: "Reception",
-      tagline: "grand celebration, Lunch & eternal memories",
+      tagline: "Grand celebration, lunch & eternal memories",
       date: "13th December 2026",
       time: "11:00 AM - 01:00 PM",
       venue: "Shubhamasthu Function Hall, Jaggampeta",
