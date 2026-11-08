@@ -178,6 +178,7 @@ export default function RSVPSection() {
                         <option value="10 Dec - Pool Party (Afternoon)">10 Dec - Pool Party (4 PM)</option>
                         <option value="10 Dec - Muhuratham (Evening)">10 Dec - Muhuratham (7 PM)</option>
                         <option value="09 December 2026 (Early Arrival)">09 Dec 2026 (Early Arrival)</option>
+                         <option value="13 December 2026">13 Dec 2026 (Reception)</option>
                       </select>
                     </div>
                   </div>
