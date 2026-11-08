@@ -50,7 +50,7 @@ export default function EnvelopeIntro({ onOpen, weddingData, isAudioPlaying, tog
 
     setTimeout(() => {
       onOpen();
-    }, 5200);
+    }, 6800);
   };
 
   return (
