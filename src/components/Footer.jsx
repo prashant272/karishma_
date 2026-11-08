@@ -37,7 +37,7 @@ export default function Footer({ weddingData }) {
           <span className="hidden sm:inline text-[#D4AF37]">&bull;</span>
           <span className="font-cinzel">{weddingData.weddingDetails.dateText}</span>
           <span className="hidden sm:inline text-[#D4AF37]">&bull;</span>
-          <span className="font-cinzel">{weddingData.weddingDetails.venueName}</span>
+          {/* <span className="font-cinzel">{weddingData.weddingDetails.venueName}</span> */}
         </div>
 
         {/* Royal Families Signature Badge */}
