@@ -32,8 +32,14 @@ function App() {
   return (
     <div className="min-h-screen bg-[#180307] text-[#FAF5EB] selection:bg-[#D4AF37]/30 selection:text-[#F3E5AB]">
       {/* Background YouTube Audio Player (Always mounted in DOM so it continues playing across all sections) */}
-      <YouTubeAudio
+      {/* Purana song (Kudmayi - PGer5XYPaPk) comment out kiya gaya: */}
+      {/* <YouTubeAudio
         videoId="PGer5XYPaPk"
+        isPlaying={isAudioPlaying}
+      /> */}
+      {/* Naya audio from https://www.youtube.com/shorts/kJE1BE-6KvQ */}
+      <YouTubeAudio
+        videoId="kJE1BE-6KvQ"
         isPlaying={isAudioPlaying}
       />
 
