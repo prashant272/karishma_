@@ -32,7 +32,7 @@ export const weddingData = {
     dateText: "10 December 2026",
     targetDate: "2026-12-10T19:00:00+05:30",
     venueName: "Sai Priya Beach Resort",
-    city: "Visakhapatnam, Andhra Pradesh",
+    city: "Rushikonda, Visakhapatnam",
     fullAddress: "Sai Priya Beach Resort, Beach Road, Rushikonda, Visakhapatnam, Andhra Pradesh - 530045",
     googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.8105786440537!2d83.38531127593685!3d17.799757683158656!2m3!1f0!2f0!3f0!3m2!1i1024!2f768!4f13.1!3m3!1m2!1s0x3a395b211bb1ad07%3A0xe9ce64e43e2fec4b!2sSai%20Priya%20Beach%20Resort!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
     mapDirectionsUrl: "https://maps.google.com/?q=Sai+Priya+Beach+Resort+Rushikonda+Visakhapatnam",
@@ -42,7 +42,7 @@ export const weddingData = {
       fullAddress: "Shubhamasthu Function Hall, Main Road, Jaggampeta, Andhra Pradesh - 533435",
       mapDirectionsUrl: "https://maps.google.com/?q=Shubhamasthu+Function+Hall+Jaggampeta",
       image: "/reception_venue_real.jpg",
-      tagline: "Spacious grand banquet hall with traditional royal hospitality & celebratory ambience."
+      tagline: "Spacious grand banquet hall with traditional hospitality & celebratory ambience."
     },
     heroImage: "/hero_beach_palace.jpg",
     couplePortrait: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=85"
