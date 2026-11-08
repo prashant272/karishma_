@@ -41,7 +41,7 @@ export const weddingData = {
       city: "Jaggampeta, Andhra Pradesh",
       fullAddress: "Shubhamasthu Function Hall, Main Road, Jaggampeta, Andhra Pradesh - 533435",
       mapDirectionsUrl: "https://maps.google.com/?q=Shubhamasthu+Function+Hall+Jaggampeta",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTg8uEEbWkn3sAWTtTR0ylJi6ZhiCB22wkyHmyDiPmpNJX-kaeWZ10wyN&s=10",
+      image: "/reception_venue_real.jpg",
       tagline: "Spacious grand banquet hall with traditional royal hospitality & celebratory ambience."
     },
     heroImage: "/hero_beach_palace.jpg",
@@ -84,7 +84,7 @@ export const weddingData = {
     {
       id: "reception",
       name: "Reception",
-      tagline: "An evening of grand celebration, dinner & eternal memories",
+      tagline: "grand celebration, Lunch & eternal memories",
       date: "13th December 2026",
       time: "11:00 AM - 01:00 PM",
       venue: "Shubhamasthu Function Hall, Jaggampeta",

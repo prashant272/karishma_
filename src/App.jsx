@@ -39,7 +39,7 @@ function App() {
       /> */}
       {/* Naya audio from https://www.youtube.com/shorts/kJE1BE-6KvQ */}
       <YouTubeAudio
-        videoId="kJE1BE-6KvQ"
+        videoId="Iy0Ua_BYxUU"
         isPlaying={isAudioPlaying}
       />
 
